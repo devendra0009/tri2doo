@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 import React from "react";
 import { GrInstagram, GrLinkedin, GrGithub } from "react-icons/gr";
+import {SiLeetcode} from "react-icons/si";
+
 
 const Footer = () => {
   return (
@@ -9,17 +11,17 @@ const Footer = () => {
         <div className="author a1">
           <span>Devendra Bedwal</span>
           <div className="row">
-            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/davendra-bedwal-09608b232/" target="_blank" rel="noreferrer">
               <GrLinkedin />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://leetcode.com/davendra009/"
               target="_blank"
               rel="noreferrer"
             >
-              <GrInstagram />
+              <SiLeetcode />
             </a>
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://github.com/devendra0009" target="_blank" rel="noreferrer">
               <GrGithub />
             </a>
           </div>
@@ -35,11 +37,11 @@ const Footer = () => {
               <GrLinkedin />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://leetcode.com/Akryadav/"
               target="_blank"
               rel="noreferrer"
             >
-              <GrInstagram />
+              <SiLeetcode />
             </a>
             <a
               href="https://github.com/Ankur-Ydv"
