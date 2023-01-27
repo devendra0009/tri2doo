@@ -39,6 +39,7 @@ const Container = styled.div`
     .name {
       font-size: 18px;
     }
+  
   }
 
   button {
@@ -57,8 +58,6 @@ const Container = styled.div`
       ${'' /* border: 2px solid var(--third); */}
       cursor: pointer;
     }
-  }
-  &:hover {
   }
 `;
 

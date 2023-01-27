@@ -38,7 +38,7 @@ const index = ({sheets}) => {
 
 const Header = styled.div`
   background: var(--box);
-  width: 20%;
+  width: 18rem;
   display: flex;
   justify-content: space-around;
   align-items:center;
@@ -65,12 +65,9 @@ const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
   padding: 10rem 2rem 5rem 2rem;
-  gap: 6rem;
+  gap: 1rem;
 
-  @media screen and (max-width: 520px) {
-    padding: 1rem;
-    gap: 1rem;
-  }
+  
 `;
 
 export default index;

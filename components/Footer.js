@@ -93,6 +93,7 @@ const Container = styled.div`
   .a2 {
     border-left: 2px solid var(--primary);
   }
+  
 `;
 
 export default Footer;

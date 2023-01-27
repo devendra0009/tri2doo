@@ -69,7 +69,8 @@ const Container = styled.div`
       }
     }
   }
-  @media screen and (max-widht: 820px) {
+  @media screen and (max-width: 580px) {
+    display:none;
   }
 `;
 

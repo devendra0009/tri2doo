@@ -59,12 +59,13 @@ const Container = styled.div`
       cursor: pointer;
     }
   }
+  
   .progress {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    width: 60%;
+    width: 30vw;
     .progress-bar {
       background: var(--lightBlue);
       justify-content: flex-start;
@@ -82,6 +83,20 @@ const Container = styled.div`
         transition: 0.5s ease-out;
       }
     }
+  }
+
+  @media screen and (max-width: 950px) {
+    .topic{
+      display: none;
+    }
+    .progress{
+      position:absolute;
+      right:2rem;
+
+    }
+  }
+  @media screen and (max-width: 580px) {
+    display:none;
   }
 `;
 

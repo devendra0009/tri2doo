@@ -107,12 +107,12 @@ const Sheet = ({ sheet, sheetId }) => {
                 onChange={handleChange}
               />
             </Navbar> */}
-            <Navbar>
-              <div style={{display:"flex", marginTop:'10px'}}>
+            <Navbar className="navb">
+              <div className="top-bar" >
                 <Link href="/">
                   <span >TRI2DO</span>
                 </Link>
-              <div style={{marginTop: "8px" ,marginLeft: '102px'}}> <ThemeToggler/> </div>
+              <div className="ttog"> <ThemeToggler/> </div>
               <div className="divider"></div>
               </div>
               <input
@@ -186,6 +186,17 @@ const Navbar = styled.div`
   color: var(--blue);
   ${'' /* background-color: var(--bgcolor);
   color: var(--primary); */}
+  .navb{
+    
+  }
+  .top-bar{
+    display: flex;
+    margin-top:10px;
+  }
+  .ttog{
+    margin-top: 8px ;
+    margin-left: 102px;
+  }
   span {
     font-size: 32px;
     font-family: "Bree Serif", sans-serif;
@@ -194,7 +205,7 @@ const Navbar = styled.div`
     }
   }
   .divider{
-    width: 30vh;
+    width: 16.5rem;
     margin-top: 31px;
     border-bottom: 2px solid var(--text);
     position: relative;
@@ -214,6 +225,29 @@ const Navbar = styled.div`
     &:focus {
       outline: none;
     }
+  }
+
+  @media screen and (max-width: 950px) {
+    input{
+      display:none;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .top-bar{
+      ${'' /* align-items:center; */}
+      ${'' /* padding-left: 10rem;
+      padding-right: 10rem; */}
+      ${'' /* padding-bottom: 10rem 0; */}
+      margin-bottom:30px;
+
+    }
+    .divider{
+      padding-top:25px;
+      width: 100rem;
+    }
+    .ttog{
+      position: absolute; right: 4rem;
+  }
   }
 `;
 
