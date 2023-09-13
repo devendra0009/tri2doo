@@ -30,6 +30,10 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
+  const handleNavigation = (id) => {
+    router.push(`/solve/${id}`);
+  };
+
   return (
     <Main>
       <Larger className="larger">
@@ -49,24 +53,12 @@ const Navbar = () => {
             {showDropdown ? (
               <>
                 <ul className="dropdown">
-                  <a href="/solve/0">
-                    <li>Aman DSA</li>
-                  </a>
-                  <a href="/solve/1">
-                    <li>Blind 75</li>
-                  </a>
-                  <a href="/solve/2">
-                    <li>NeetCode 150</li>
-                  </a>
-                  <a href="/solve/3">
-                    <li>Love Babbar</li>
-                  </a>
-                  <a href="/solve/4">
-                    <li>Striver Sde</li>
-                  </a>
-                  <a href="/solve/5">
-                    <li>Fraz 450</li>
-                  </a>
+                  <li onClick={handleNavigation(0)}>Aman DSA</li>
+                  <li onClick={handleNavigation(1)}>Blind 75</li>
+                  <li onClick={handleNavigation(2)}>NeetCode 150</li>
+                  <li onClick={handleNavigation(3)}>Love Babbar</li>
+                  <li onClick={handleNavigation(4)}>Striver Sde</li>
+                  <li onClick={handleNavigation(5)}>Fraz 450</li>
                 </ul>
               </>
             ) : (
