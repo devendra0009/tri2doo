@@ -51,24 +51,24 @@ const Navbar = () => {
             {showDropdown ? (
               <>
                 <ul className="dropdown">
-                  <a href="/solve/0">
+                  <Link href="/solve/0">
                     <li>Aman DSA</li>
-                  </a>
-                  <a href="/solve/1">
+                  </Link>
+                  <Link href="/solve/1">
                     <li>Blind 75</li>
-                  </a>
-                  <a href="/solve/2">
+                  </Link>
+                  <Link href="/solve/2">
                     <li>NeetCode 150</li>
-                  </a>
-                  <a href="/solve/3">
+                  </Link>
+                  <Link href="/solve/3">
                     <li>Love Babbar</li>
-                  </a>
-                  <a href="/solve/4">
+                  </Link>
+                  <Link href="/solve/4">
                     <li>Striver Sde</li>
-                  </a>
-                  <a href="/solve/5">
+                  </Link>
+                  <Link href="/solve/5">
                     <li>Fraz 450</li>
-                  </a>
+                  </Link>
                 </ul>
               </>
             ) : (
