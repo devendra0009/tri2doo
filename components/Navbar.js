@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   const handleNavigation = (id) => {
-    router.push(`/solve/${id}`);
+    router.replace(`/solve/${id}`);
   };
 
   return (
@@ -290,7 +290,7 @@ const Larger = styled.div`
         z-index: 10000;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
           rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-        a {
+        li {
           padding: 0.75rem;
           &:hover {
             background: var(--grey);

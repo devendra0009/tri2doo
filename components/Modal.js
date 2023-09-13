@@ -20,7 +20,7 @@ const Modal = ({ showModal, setShowModal }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(false);
-  const [loading,setLoading]=useState(false);
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
 
   const showErrorToast = (msg) => {
@@ -54,13 +54,13 @@ const Modal = ({ showModal, setShowModal }) => {
           setUser(res.data.response._id);
           setShowModal(false);
         }
-        setLoading(false)
+        setLoading(false);
       } catch (error) {
-        setLoading(false)
+        setLoading(false);
         showErrorToast(error.msg);
       }
     } else {
-      setLoading(false)
+      setLoading(false);
       showErrorToast("Please Fill Your Credentials");
     }
   };
@@ -106,22 +106,25 @@ const Modal = ({ showModal, setShowModal }) => {
                   onChange={(e) => {
                     setUsername(e.target.value);
                   }}
-                  style={{paddingRight:"4rem"}}
+                  style={{ paddingRight: "4rem" }}
                 />
                 <input
-                  type="text"
+                  type="password"
                   placeholder="Enter Password"
-                  
                   onChange={(e) => {
                     setPassword(e.target.value);
                   }}
                 />
                 <div style={{ width: "100%" }}>
                   <button onClick={handleSubmit}>
-                    {!loading? !login ? "CONTINUE SOLVING" : "START SOLVING" : 'Entering...'}
+                    {!loading
+                      ? !login
+                        ? "CONTINUE SOLVING"
+                        : "START SOLVING"
+                      : "Entering..."}
                   </button>
                   <p style={{ textAlign: "right", paddingTop: "1rem" }}>
-                    <span className="login" onClick={() => setLogin(!login)} >
+                    <span className="login" onClick={() => setLogin(!login)}>
                       {login ? "LOGIN" : "REGISTER"}
                     </span>
                   </p>
@@ -159,12 +162,10 @@ const ModalWrapper = styled.div`
   justify-content: center;
   border-radius: 10px;
   z-index: 11;
-  @media (max-width:500px)
-  {
+  @media (max-width: 500px) {
     width: 90vw;
     bottom: 0;
     height: 220px;
-
   }
 `;
 
@@ -214,7 +215,7 @@ const CloseModalButton = styled(MdClose)`
   height: 32px;
   padding: 0;
   z-index: 10;
-  color: var(--text)
+  color: var(--text);
 `;
 
 export default Modal;
