@@ -53,12 +53,24 @@ const Navbar = () => {
             {showDropdown ? (
               <>
                 <ul className="dropdown">
-                  <li onClick={handleNavigation}>Aman DSA</li>
-                  <li onClick={handleNavigation}>Blind 75</li>
-                  <li onClick={handleNavigation}>NeetCode 150</li>
-                  <li onClick={handleNavigation}>Love Babbar</li>
-                  <li onClick={handleNavigation}>Striver Sde</li>
-                  <li onClick={handleNavigation}>Fraz 450</li>
+                  <Link href="/solve/0">
+                    <li onClick={handleNavigation}>Aman DSA</li>
+                  </Link>
+                  <Link href="/solve/1">
+                    <li onClick={handleNavigation}>Blind 75</li>
+                  </Link>
+                  <Link href="/solve/2">
+                    <li onClick={handleNavigation}>NeetCode 150</li>
+                  </Link>
+                  <Link href="/solve/3">
+                    <li onClick={handleNavigation}>Love Babbar</li>
+                  </Link>
+                  <Link href="/solve/4">
+                    <li onClick={handleNavigation}>Striver Sde</li>
+                  </Link>
+                  <Link href="/solve/5">
+                    <li onClick={handleNavigation}>Fraz 450</li>
+                  </Link>
                 </ul>
               </>
             ) : (
