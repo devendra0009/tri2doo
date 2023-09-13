@@ -1,4 +1,3 @@
-
 import styled from "@emotion/styled";
 import React, { useContext, useState } from "react";
 import { MdLogout } from "react-icons/md";
@@ -9,7 +8,6 @@ import MyContext from "../utils/MyContext";
 import { useRouter } from "next/router";
 import { TiThMenu } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
-
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
@@ -51,24 +49,24 @@ const Navbar = () => {
             {showDropdown ? (
               <>
                 <ul className="dropdown">
-                  <Link href="/solve/0">
+                  <a href="/solve/0">
                     <li>Aman DSA</li>
-                  </Link>
-                  <Link href="/solve/1">
+                  </a>
+                  <a href="/solve/1">
                     <li>Blind 75</li>
-                  </Link>
-                  <Link href="/solve/2">
+                  </a>
+                  <a href="/solve/2">
                     <li>NeetCode 150</li>
-                  </Link>
-                  <Link href="/solve/3">
+                  </a>
+                  <a href="/solve/3">
                     <li>Love Babbar</li>
-                  </Link>
-                  <Link href="/solve/4">
+                  </a>
+                  <a href="/solve/4">
                     <li>Striver Sde</li>
-                  </Link>
-                  <Link href="/solve/5">
+                  </a>
+                  <a href="/solve/5">
                     <li>Fraz 450</li>
-                  </Link>
+                  </a>
                 </ul>
               </>
             ) : (
@@ -275,13 +273,13 @@ const Larger = styled.div`
     gap: 2rem;
     font-size: 20px;
     .login {
-    font-size: 18px;
+      font-size: 18px;
       cursor: pointer;
       padding: 5px 10px;
       border-radius: 10px;
-        background-color: #07ee07;
+      background-color: #07ee07;
       :hover {
-      background-color: #0bdf0b;
+        background-color: #0bdf0b;
       }
     }
     .heading {
