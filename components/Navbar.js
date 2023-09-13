@@ -30,8 +30,8 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
-  const handleNavigation = (id) => {
-    router.replace(`/solve/${id}`);
+  const handleNavigation = () => {
+    router.refresh();
   };
 
   return (
@@ -53,12 +53,12 @@ const Navbar = () => {
             {showDropdown ? (
               <>
                 <ul className="dropdown">
-                  <li onClick={handleNavigation(0)}>Aman DSA</li>
-                  <li onClick={handleNavigation(1)}>Blind 75</li>
-                  <li onClick={handleNavigation(2)}>NeetCode 150</li>
-                  <li onClick={handleNavigation(3)}>Love Babbar</li>
-                  <li onClick={handleNavigation(4)}>Striver Sde</li>
-                  <li onClick={handleNavigation(5)}>Fraz 450</li>
+                  <li onClick={handleNavigation}>Aman DSA</li>
+                  <li onClick={handleNavigation}>Blind 75</li>
+                  <li onClick={handleNavigation}>NeetCode 150</li>
+                  <li onClick={handleNavigation}>Love Babbar</li>
+                  <li onClick={handleNavigation}>Striver Sde</li>
+                  <li onClick={handleNavigation}>Fraz 450</li>
                 </ul>
               </>
             ) : (
@@ -292,6 +292,7 @@ const Larger = styled.div`
           rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         li {
           padding: 0.75rem;
+          cursor: pointer;
           &:hover {
             background: var(--grey);
             transition: 0.3s ease-in-out;
