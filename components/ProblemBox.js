@@ -56,7 +56,8 @@ const Container = styled.div`
     width: 80%;
   }
   @media (max-width: 500px) {
-    .check, .bookmark{
+    .check,
+    .bookmark {
       display: none;
     }
   }

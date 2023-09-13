@@ -1,3 +1,4 @@
+
 import styled from "@emotion/styled";
 import React, { useContext, useState } from "react";
 import { MdLogout } from "react-icons/md";
@@ -8,6 +9,7 @@ import MyContext from "../utils/MyContext";
 import { useRouter } from "next/router";
 import { TiThMenu } from "react-icons/ti";
 import { ImCross } from "react-icons/im";
+
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
