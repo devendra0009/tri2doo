@@ -44,6 +44,10 @@ const Solve = ({ sheet, sheetId }) => {
   const [loading, setLoading] = useState(user !== null);
   const [problems, setProblems] = useState(sheet.problems);
 
+  // useEffect(() => {
+  //   router.replace(router.asPath);
+  // }, [router.asPath]);
+
   useEffect(() => {
     if (user) {
       const setData = async () => {
@@ -65,7 +69,7 @@ const Solve = ({ sheet, sheetId }) => {
 
       setData();
     }
-  }, []);
+  }, [router.asPath]);
 
   useEffect(() => {
     if (showBookmark) {
@@ -303,13 +307,11 @@ const Container = styled.div`
       box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3) inset;
     }
   }
-  @media (max-width:900px)
-  {
-    width:80%;
+  @media (max-width: 900px) {
+    width: 80%;
   }
-  @media (max-width:500px)
-  {
-    width:90%;
+  @media (max-width: 500px) {
+    width: 90%;
   }
 `;
 

@@ -1,10 +1,11 @@
 import styled from "@emotion/styled";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 import { FaExternalLinkAlt, FaBookmark, FaRegBookmark } from "react-icons/fa";
-// import { ToastContainer } from "react-toastify";
 
 const ProblemBox = ({ problem, handleBookmark, handleCheck }) => {
+  const router = useRouter();
   const [isBmk, setIsBmk] = useState(problem.isBookmarked);
   const [isCheck, setIsCheck] = useState(problem.isSolved);
 
